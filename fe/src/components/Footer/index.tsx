@@ -1,20 +1,27 @@
-import { Container } from "./styles";
+// npm install react-icons
+
+import { Container, Content} from "./styles";
+import { SocialIcons } from "./styles";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGit, FaGithub, FaTelegram, FaSkype} from 'react-icons/fa';
 
 export function Footer() {
     return (
-        <footer>
-            <ul class="social">
-                <li>
-                    <a href="https://github.com/rebaeoliveira"><i class="fab fa-github"></i></a>
-                </li>
-                <li>
-                    <a href="https://github.com/silvaJosenei"><i class="fab fa-github"></i></a>
-                </li>
-                <li>
-                    <a href="https://pixabay.com/api/docs/"><i class="fab fa-chrome"></i></a>
-                </li>
-            </ul>
-            <div class="text">Renivaldo Baessa de Oliveira</div>
-        </footer>
-    )
+    <Container>
+      <Content>
+        <div className="page-details">
+          <h1>Renivaldo Baessa de Oliveira</h1>
+          <h2>Programação Web 2 - Professor Fernando</h2>
+        </div>
+
+        <SocialIcons>
+          <FaInstagram/>
+          <FaFacebook/>
+          <FaTwitter/>
+          <FaGithub/>
+          <FaTelegram/>
+          <FaSkype/>
+        </SocialIcons>
+      </Content>
+    </Container>
+  );
 }
